@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-</head>
+    </head>
 <body>
     <h1>Веб-технологии. Домашнее задание №3</h1>
-    <h2>Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции.</h2>
+    <p>Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции.</p>
+
+<script>
+
+    function introduceYourself() {
+        const yourName = prompt(`Как Вас зовут?`);
+
+        if (!isNaN(yourName)) {
+            return `Вы ввели число`
+        } 
+        else if (yourName) {
+            return (`Ваше имя: ${yourName}`)
+        }
+        else {
+            return `Пожалуйста, введите корректное имя`
+        }
+
+    }
+
+    alert(introduceYourself())
+
+</script>
 </body>
 </html>
